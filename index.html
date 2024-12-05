@@ -96,24 +96,37 @@
         <nav class="container flex  flex-col md:flex-row justify-around py-2.5 text-center md:text-left items-center bg-purple-800">
             <a href="#"><img src="images/logo-chatime.png" alt="LogoChatime"></a>
             <ul class="flex flex-col md:flex-row items-center space-x-4 text-white font-bold">
-                <li class="hover:text-pink-500"><a href=#>BIODATA</a></li>
-                <li class="hover:text-pink-500"><a href=#>CONTACT US</a></li>
-                <li class="hover:text-pink-500"><a href=#>POSTS</a></li>
-                <li class="hover:text-pink-500"><a href=#>GALLERY</a></li>
-                <li class="hover:text-pink-500"><a href=#>STORE LOCATION</a></li>
-                <li class="hover:text-pink-500"><a href=#>ATEALIER</a></li>
-                <li class="pb-1.5 pt-1 px-2 bg-pink-500 rounded-2xl"><a href=#>MOBILE APP</a></li>
+                <li class="hover:text-pink-500 md:block hidden"><a href=#>BIODATA</a></li>
+                <li class="hover:text-pink-500 md:block hidden"><a href=#>CONTACT US</a></li>
+                <li class="hover:text-pink-500 md:block hidden"><a href=#>POSTS</a></li>
+                <li class="hover:text-pink-500 md:block hidden"><a href=#>GALLERY</a></li>
+                <li class="hover:text-pink-500 md:block hidden"><a href=#>STORE LOCATION</a></li>
+                <li class="hover:text-pink-500 md:block hidden"><a href=#>ATEALIER</a></li>
+                <li class="pb-1.5 pt-1 px-2 bg-pink-500 rounded-2xl md:block hidden"><a href=#>MOBILE APP</a></li>
+                <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
-        <ul class="flex flex-col justify-start items-center space-y-0 text-white font-bold fixed top-0 right-0 h-screen w-60 bg-white shadow-xl text-center">
-            <li class="border-y py-2 hover:text-red-600 w-full"><a class="w-full" href=#>BIODATA</a></li>
-            <li class="border-y py-2 hover:text-red-600 w-full"><a class="w-full" href=#>CONTACT US</a></li>
-            <li class="border-y py-2 hover:text-red-600 w-full"><a class="w-full" href=#>POSTS</a></li>
-            <li class="border-y py-2 hover:text-red-600 w-full"><a class="w-full" href=#>GALLERY</a></li>
-            <li class="border-y py-2 hover:text-red-600 w-full"><a class="w-full" href=#>STORE LOCATION</a></li>
-            <li class="border-y py-2 hover:text-red-600 w-full"><a class="w-full" href=#>ATEALIER</a></li>
-            <li class="py-2 bg-pink-500 w-full"><a href=#>MOBILE APP</a></li>
+        <ul id="sidebar" class="hidden flex-col justify-start space-y-0 font-bold fixed top-0 right-0 h-screen w-60 bg-white shadow-xl">
+            <li onclick=hideSidebar()><a href="#"><svg class="text-white bg-pink-500 py-2  px-2" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="36px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li class="border-y py-2 text-gray-500 hover:text-red-600 text-center w-full"><a class="w-full" href=#>BIODATA</a></li>
+            <li class="border-y py-2 text-gray-500 hover:text-red-600 text-center w-full"><a class="w-full" href=#>CONTACT US</a></li>
+            <li class="border-y py-2 text-gray-500 hover:text-red-600 text-center w-full"><a class="w-full" href=#>POSTS</a></li>
+            <li class="border-y py-2 text-gray-500 hover:text-red-600 text-center w-full"><a class="w-full" href=#>GALLERY</a></li>
+            <li class="border-y py-2 text-gray-500 hover:text-red-600 text-center w-full"><a class="w-full" href=#>STORE LOCATION</a></li>
+            <li class="border-y py-2 text-gray-500 hover:text-red-600 text-center w-full"><a class="w-full" href=#>ATEALIER</a></li>
+            <li class="py-2 bg-pink-500 w-full text-white text-center "><a href=#>MOBILE APP</a></li>
         </ul>
     </header>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('#sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('#sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 </html>
