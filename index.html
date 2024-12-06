@@ -6,10 +6,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Chatime Indonesia</title>
     <link rel="icon" type="image/x-icon" href="images/IconChatime.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="font-sans min-h-lvh">
     <header>
-        <nav class="container flex lg:flex-row justify-around py-2.5 text-center items-center bg-purple-800">
+        <nav class="container flex lg:flex-row justify-around py-2.5 text-center items-center bg-purple-800 w-full min-w-full">
             <a class="block lg:hidden" onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
             <a href="#"><img src="images/logo-chatime.png" alt="LogoChatime"></a>
             <ul class="flex flex-col lg:flex-row items-center space-x-4 text-white font-bold">
@@ -33,6 +34,41 @@
             <li class="py-2 bg-pink-500 w-full text-white text-center "><a href=#>MOBILE APP</a></li>
         </ul>
     </header>
+    <footer class="flex flex-col bg-gray-400">
+        <div class="flex flex-col lg:flex-row bg-pink-100 justify-around items-center">
+            <div class="flex flex-col items-center lg:items-baseline">
+                <p>Get in touch with us</p>
+                <p>Subscribe for updated promo, news and events</p>
+            </div>
+            <form>
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Your Email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="flex flex-col-reverse lg:flex-row justify-between items-center">
+            <ul class="flex flex-row space-x-2.5">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>   
+            </ul>
+            <ul class="flex flex-col lg:flex-row items-center space-x-2">
+                <li><a href="https://fti.unai.edu/" target="_blank">FTI UNAI</a></li>
+                <li><a href="https://unai.edu/" target="_blank">UNAI Website</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- <footer>
+        <div class="flex place-items-center justify-around bg-no-repeat bg-contain bg-bottom w-auto h-auto" style="background-image: url(images/footerImage.png)">
+            <p>Get in touch with us<br>Subscribe for updated promo, news and events</p>
+            <form>
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Your Email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer> -->
 
     <script>
         function showSidebar(){
