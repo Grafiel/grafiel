@@ -34,19 +34,31 @@
             <li class="py-2 bg-pink-500 w-full text-white text-center "><a href=#>MOBILE APP</a></li>
         </ul>
     </header>
+
+    <div class="carousel-container">
+        <div class="carousel-slide" id="carousel-slide">
+            <a href="#"><img src="images/rekomendasi-minuman-chatime.jpg" alt="Promo 1"></a>
+            <a href="#"><img src="images/siap-jadi-geng-penyelamat-bumi.jpg" alt="Promo 2"></a>
+            <a href="#"><img src="images/landing-page-ecoday.jpg" alt="Promo 3"></a>
+            <a href="#"><img src="images/landing-page-byot.jpg" alt="Promo 4"></a>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
     <footer class="flex flex-col">
-        <div class="flex flex-col lg:flex-row bg-pink-400 justify-around items-center bg-no-repeat bg-cover w-full min-w-full y-auto lg:py-32 lg:pr-8px" style="background-image: url(images/footerImage.png)">
-            <div class="flex flex-col items-center lg:items-baseline text-white lg:pr-60 pb-6 lg:pb-0">
+        <div class="flex flex-col lg:flex-row bg-pink-400 justify-start items-center bg-no-repeat bg-cover w-full min-w-full y-auto lg:py-32 lg:pr-8px" style="background-image: url(images/footerImage.png)">
+            <div class="flex flex-col items-center lg:items-baseline text-white lg:pr-60 pb-6 lg:pb-0 lg:pl-40">
                 <p class="text-2xl lg:text-4xl font-bold">Get in touch with us</p>
                 <p class="text-sm lg:text-lg font-bold">Subscribe for updated promo, news and events</p>
             </div>
             <form class="flex items-center">
-                <i class="fas fa-envelope text-purple-800 bg bg-white lg:text-2xl lg:py-1 lg:px-6"></i>
+                <i class="fas fa-envelope text-purple-800 bg bg-white py-1 px-2 lg:text-2xl lg:py-1 lg:px-6"></i>
                 <input class="lg:text-xl lg:py-1.5 lg:px-2" type="email" placeholder="Your Email">
                 <button class="lg:text-xl lg:py-1.5 lg:px-4 text-white bg-green-500 text" type="submit">Subscribe</button>
             </form>
         </div>
-        <div class="flex flex-col-reverse lg:flex-row justify-between items-center text-purple-800 lg:pt-2 lg:pb-6">
+        <div class="flex flex-col-reverse lg:flex-row justify-between items-center text-purple-800 pt-4 lg:pt-2 lg:pb-6">
             <ul class="flex flex-row space-x-2.5 lg:pl-7 font-bold text-2xl">
                 <li class="hover:text-pink-500"><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li class="hover:text-pink-500"><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -58,18 +70,6 @@
             </ul>
         </div>
     </footer>
-
-    <!-- <footer>
-        <div class="flex place-items-center justify-around bg-no-repeat bg-contain bg-bottom w-auto h-auto" style="background-image: url(images/footerImage.png)">
-            <p>Get in touch with us<br>Subscribe for updated promo, news and events</p>
-            <form>
-                <i class="fas fa-envelope"></i>
-                <input type="email" placeholder="Your Email">
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-    </footer> -->
-
     <script>
         function showSidebar(){
             const sidebar = document.querySelector('#sidebar')
@@ -79,6 +79,25 @@
             const sidebar = document.querySelector('#sidebar')
             sidebar.style.display = 'none'
         }
+        let slideIndex = 0;
+            const slideContainer = document.getElementById('carousel-slide');
+            const slides = slideContainer.getElementsByTagName('a');
+            const totalSlides = slides.length;
+            let slideInterval;
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % totalSlides;
+            slideContainer.style.transform = `translateX(-${slideIndex * 100}vw)`;
+            resetAutoSlide();
+        }
+
+        function prevSlide() {
+            slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+            slideContainer.style.transform = `translateX(-${slideIndex * 100}vw)`;
+            resetAutoSlide();
+            }
+
+
     </script>
 </body>
 </html>
