@@ -7,12 +7,13 @@
     <title>Chatime Indonesia</title>
     <link rel="icon" type="image/x-icon" href="images/IconChatime.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="carousel.css">
 </head>
 <body class="font-sans min-h-lvh">
-    <header>
+    <header class="relative z-50">
         <nav class="container flex lg:flex-row justify-around py-2.5 text-center items-center bg-purple-800 w-full min-w-full">
             <a class="block lg:hidden" onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
-            <a href="#"><img src="images/logo-chatime.png" alt="LogoChatime"></a>
+            <a class="size-1/2 lg:size-auto" href="#"><img src="images/logo-chatime.png" alt="LogoChatime"></a>
             <ul class="flex flex-col lg:flex-row items-center space-x-4 text-white font-bold">
                 <li class="hover:text-pink-500 lg:block hidden"><a href=#>BIODATA</a></li>
                 <li class="hover:text-pink-500 lg:block hidden"><a href=#>CONTACT US</a></li>
@@ -42,10 +43,41 @@
             <a href="#"><img src="images/landing-page-ecoday.jpg" alt="Promo 3"></a>
             <a href="#"><img src="images/landing-page-byot.jpg" alt="Promo 4"></a>
         </div>
-        <button class="prev" onclick="prevSlide()">&#10094;</button>
-        <button class="next" onclick="nextSlide()">&#10095;</button>
+        <button id="prev" class="md:w-12 md:h-12 md:text-xl w-8 h-8 text-xs" onclick="prevSlide()">&#10094;</button>
+        <button id="next" class="md:w-12 md:h-12 md:text-xl w-8 h-8 text-xs" onclick="nextSlide()">&#10095;</button>
     </div>
-
+    <!--  -->
+    <div class="bg-pink-300">
+        <div class="flex flex-col items-center md:pt-20 md:pb-10 text-purple-800 font-bold">
+            <h1 class=" text-1xl md:text-5xl md:pb-10">Our Menu</h1>
+            <p class="text-xs md:text-xl">Semua menu Chatime dibuat dengan</p>
+            <p class="text-xs md:text-xl">menggunakan bahan-bahan pilihan terbaik untuk</p>
+            <p class="text-xs md:text-xl">menghasilkan minuman yang menyegarkan dan</p>
+            <p class="text-xs md:text-xl">menenangkan.</p>
+        </div>  
+        <ul class="md:flex md:flex-row md:items-center md:size-10/12 md:pl-48">
+            <li><a href="#"><img src="images/chocolate-mouse.png"></a></li>
+            <li><a href="#"><img src="images/matcha-latte.png"></a></li>
+            <li><a href="#"><img src="images/hzel-choco.png"></a></li>
+            <li><a href="#"><img src="images/brown-sugar-milk-tea.png"></a></li>
+            <li><a href="#"><img src="images/milk-tea.png"></a></li>   
+        </ul>
+        <img class="md:relative" src="images/rounded_rect.png">
+        <div class="md:flex md:flex-row">
+            <ul class="md:relative">
+                <li><div>
+                    <p>Minum Chatime Tanpa Antre?</p>
+                    <p style="font-weight: bold;">Download My F&B ID App</p>
+                </div></li>
+                <li><img src="images/separatebar.png" alt="separatebar"></li>
+                <li><a href="#"><img class="store" src="images/playstore.png" alt="playstore"></a></li>
+                <li><a href="#"><img class="store" src="images/appstore.png" alt="appstore"></a></li>
+                <li><img src="images/phone_left.png"></li>
+                <li><img src="images/phone_right.png"></li>
+            </ul>
+        </div>
+    </div>
+    <!--  -->
     <footer class="flex flex-col">
         <div class="flex flex-col lg:flex-row bg-pink-400 justify-start items-center bg-no-repeat bg-cover w-full min-w-full y-auto lg:py-32 lg:pr-8px" style="background-image: url(images/footerImage.png)">
             <div class="flex flex-col items-center lg:items-baseline text-white lg:pr-60 pb-6 lg:pb-0 lg:pl-40">
@@ -96,8 +128,6 @@
             slideContainer.style.transform = `translateX(-${slideIndex * 100}vw)`;
             resetAutoSlide();
             }
-
-
     </script>
 </body>
 </html>
