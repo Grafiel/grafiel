@@ -52,3 +52,393 @@
 #next::before {
     transform: rotate(-45deg);
 }
+
+.part1 {
+    display: flex;
+    background-image: url(images/background1.png);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 900px;
+    margin: -6% 0 0;
+    background-size: 100%;
+    flex-direction: column;
+}
+
+.ourmenu {
+    color: rebeccapurple;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center;
+    padding: 10% 0 0;
+}
+
+.ourmenu h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.ourmenu p {
+    font-size: 24px;
+}
+
+.drinks ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 260px 0 0;
+    margin-left: 9%;
+}
+
+.drinks ul a img {
+    position: relative;
+    width: 250px;
+    height: auto;
+}
+
+.download {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: auto;
+    z-index: 1;
+}
+
+.rectangle {
+    position: absolute;
+    justify-content: center;
+    z-index: -1;
+    width: 1125px;
+    height: auto;
+    bottom: 95%;
+}
+
+.insiderectangle {
+    position: relative;
+    bottom: 150%;
+    margin-right: 125px;
+}
+
+.insiderectangle ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.insiderectangle ul li {
+    display: flex;
+    justify-content: center;
+}
+
+.minumchatime p {
+    text-align: right;
+    color: white;
+    font-size: 24px;
+}
+
+.separatebar {
+    height: 60px;
+    padding-bottom: 10px;
+    margin-right: 15px;
+}
+
+.store {
+    width: 200px;
+    height: auto;
+}
+
+.phone {
+    display: flex;
+    flex-direction: row;
+}
+
+.phone img {
+    position: relative;
+    z-index: 1;
+    width: 70px;
+    height: auto;
+    bottom: 235px;
+    left: 1147px;
+}
+
+.upper {
+    display: flex;
+    justify-content: center;
+}
+
+.upper div img {
+    z-index: -1;
+    position: relative;
+    width: 500px;
+    height: auto;
+}
+
+.upper div a {
+    text-decoration: none;
+}
+
+#m1 {
+    position: relative;
+    bottom: 10%;
+    right: 16px;
+}
+
+#m2 {
+    position: relative;
+    width: 300px;
+    height: auto;
+    bottom: 9.4%;
+}
+
+#m3 {
+    position: relative;
+    width: 300px;
+    height: auto;
+    left: 10px;
+}
+
+.p1 {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+    top: 19%;
+    left: 40px;
+}
+
+.a1 {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid limegreen;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 21%;
+    left: 40px;
+    background-color: limegreen;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 22px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 35px;
+}
+
+.p2 {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+    top: 19%;
+    left: 60px;
+}
+
+.a2 {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+    top: 25%;
+    left: 60px;
+    background-color: limegreen;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 22px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 35px;
+}
+
+.p3 {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+    top: 19%;
+    left: 46px;
+}
+
+.a3 {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+    top: 25%;
+    background-color: limegreen;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 22px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 35px;
+    left: 46px;
+}
+
+.navs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navs-item {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.all {
+    background-color: #ff7f7f; 
+    margin-top: 20px;
+}   
+.casual { 
+    background-color: #90ee90; 
+    margin-top: 20px;
+}
+.competitive { 
+    background-color: #ff9999; 
+    margin-top: 20px;
+}
+.narrative { 
+    background-color: #4682b4; 
+    margin-top: 20px;
+}
+.indie { 
+    background-color: #3cb371; 
+    margin-top: 20px;
+}
+
+.grids {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #3cb371;
+}
+
+.card-note {
+    color: #3cb371;
+    font-size: 0.9em;
+}
+
+.part3 {
+    position: relative;
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    margin-right: 5px;
+    bottom: 24px;
+}
+
+.part3 div a img {
+    width: 557px;
+    height: auto;
+}
+
+.part4 {
+    position: relative;
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    margin-right: 5px;
+    top: 40px;
+    bottom: 22px;
+}
+
+.part4 div a img {
+    z-index: -1;
+    width: 557px;
+    height: auto;
+}
+
+.part4 div p {
+    color: rebeccapurple;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    bottom: 20px;
+}
+
+.part4 div a {
+    text-decoration: none;
+}
+
+.part4 div a p {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#MoreInfo1 {
+    display: inline-block;
+    z-index: 1;
+    position: absolute;
+    left: 425px;
+    bottom: 450px;
+    background-color: limegreen;
+    border-radius: 20px;
+    text-align: center;
+    padding: 9px 24px;
+}
+
+#pesan {
+    position: relative;
+    text-align: center;
+    color: white;
+    bottom: 180px;
+    font-size: 24px;
+}
+
+#MoreInfo2 {
+    display: inline-block;
+    z-index: 1;
+    position: absolute;
+    bottom: 110px;
+    right: 400px;
+    background-color: limegreen;
+    border-radius: 20px;
+    text-align: center;
+    padding: 9px 24px;
+}
+
+#quality {
+    position: relative;
+    text-align: center;
+    top: 25px;
+    color: rebeccapurple;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#bannermenu {
+    margin-top: 70px;
+    width: 100vw;
+    height: auto;
+}
