@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Biodata</title>
+    <link rel="icon" type="image/x-icon" href="images/IconChatime.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="carousel.css">
+</head>
+<body class="font-sans min-h-lvh">
+    <header class="relative z-50">
+        <nav class="container flex lg:flex-row justify-around py-2.5 text-center items-center bg-purple-800 w-full min-w-full fixed">
+            <a class="block lg:hidden" onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            <a class="size-1/2 lg:size-auto" href="#"><img src="images/logo-chatime.png" alt="LogoChatime"></a>
+            <ul class="flex flex-col lg:flex-row items-center space-x-4 text-white font-bold">
+                <li class="hover:text-pink-500 lg:block hidden"><a href="index.html">INDEX</a></li>
+                <li class="hover:text-pink-500 lg:block hidden"><a href="contact_us.html">CONTACT US</a></li>
+                <li class="hover:text-pink-500 lg:block hidden"><a href="posts.html">POSTS</a></li>
+                <li class="hover:text-pink-500 lg:block hidden"><a href="freepage.html">GALLERY</a></li>
+                <li class="hover:text-pink-500 lg:block hidden"><a href=#>STORE LOCATION</a></li>
+                <li class="hover:text-pink-500 lg:block hidden"><a href=#>ATEALIER</a></li>
+                <li class="pb-1.5 pt-1 px-2 bg-pink-500 rounded-2xl lg:block hidden"><a href=#>MOBILE APP</a></li>
+            </ul>
+        </nav>
+        <ul id="sidebar" class="hidden flex flex-col justify-start place-self-start space-y-0 font-bold fixed top-0 left-0 h-screen w-60 z-auto bg-white shadow-xl">
+            <li class="pb-16 flex justify-end" onclick=hideSidebar()><a href="#"><svg class="text-white bg-pink-500 py-2  px-2" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="36px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li class="border-y py-2 text-gray-500 hover:text-red-600 text-center w-full"><a class="w-full" href="index.html">INDEX</a></li>
+            <li class="border-y py-2 text-gray-500 hover:text-red-600 text-center w-full"><a class="w-full" href="contact_us.html">CONTACT US</a></li>
+            <li class="border-y py-2 text-gray-500 hover:text-red-600 text-center w-full"><a class="w-full" href="posts.html">POSTS</a></li>
+            <li class="border-y py-2 text-gray-500 hover:text-red-600 text-center w-full"><a class="w-full" href="freepage.html">GALLERY</a></li>
+            <li class="border-y py-2 text-gray-500 hover:text-red-600 text-center w-full"><a class="w-full" href=#>STORE LOCATION</a></li>
+            <li class="border-y py-2 text-gray-500 hover:text-red-600 text-center w-full"><a class="w-full" href=#>ATEALIER</a></li>
+            <li class="py-2 bg-pink-500 w-full text-white text-center "><a href=#>MOBILE APP</a></li>
+        </ul>
+    </header>
+
+    <div>
+        <div class="md:flex md:flex-row md:justify-around items-center">
+            <div class="md:flex md:flex-col text-justify md:justify-around md:max-w-lg md:ml-48">
+                <div class="pb-8">
+                    <br></br><br>
+                    <h1 class="md:mt-16 text-purple-800 font-bold md:text-6xl text-2xl">About Me</h1>
+                    <p class="md:mt-8 mt-2 text-purple-800 font-bold md:text-lg">My name is Grafiel Aprilio Sitanggang, I am 
+                        a student at UNAI. My student ID is 2381028, my faculty is FTI. My hobbies include, drawing, playing video games, 
+                        and reading comics. I am currently pursuing a skill in video game programming.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-purple-800 font-bold md:text-3xl text-2xl">Testimony</h2>
+                    <p class="md:mt-4 mt-2 text-purple-800 font-bold md:text-lg">The task is to share something valuable that I have learned 
+                        in web programming class, but everything that I have learned are all very valuable. Learning HTML at first seems hard, 
+                        but once you try it a bit, it's not even that bad. CSS is also quite similar, even though it is difficult, but it's 
+                        actually pretty fun. Although JS is not something i enjoyed at all, but i am interested in learning it, because of how valuable 
+                        the knowledge are.
+                    </p>
+                </div>
+            </div>
+            <img class="md:max-w-80 md:h-auto md:rounded-2xl md:mt-32 md:mr-48" src="images/fotokuPt2.jpg" alt="Foto Grafiel">
+        </div><br><br>
+        
+    <footer class="flex flex-col">
+        <div class="flex flex-col lg:flex-row bg-pink-400 justify-start items-center bg-no-repeat bg-cover w-full min-w-full y-auto lg:py-32 lg:pr-8px" style="background-image: url(images/footerImage.png)">
+            <div class="flex flex-col items-center lg:items-baseline text-white lg:pr-60 pb-6 lg:pb-0 lg:pl-40">
+                <p class="text-2xl lg:text-4xl font-bold">Get in touch with us</p>
+                <p class="text-sm lg:text-lg font-bold">Subscribe for updated promo, news and events</p>
+            </div>
+            <form class="flex items-center">
+                <i class="fas fa-envelope text-purple-800 bg bg-white py-1 px-2 lg:text-2xl lg:py-1 lg:px-6"></i>
+                <input class="lg:text-xl lg:py-1.5 lg:px-2" type="email" placeholder="Your Email">
+                <button class="lg:text-xl lg:py-1.5 lg:px-4 text-white bg-green-500 text" type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="flex flex-col-reverse lg:flex-row justify-between items-center text-purple-800 pt-4 lg:pt-2 lg:pb-6">
+            <ul class="flex flex-row space-x-2.5 lg:pl-7 font-bold text-2xl">
+                <li class="hover:text-pink-500"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li class="hover:text-pink-500"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="hover:text-pink-500"><a href="#"><i class="fab fa-instagram"></i></a></li>   
+            </ul>
+            <ul class="flex flex-col lg:flex-row items-center lg:space-x-4 font-bold lg:pr-7">
+                <li class="hover:text-pink-500"><a href="https://fti.unai.edu/" target="_blank">FTI UNAI</a></li>
+                <li class="hover:text-pink-500"><a href="https://unai.edu/" target="_blank">UNAI Website</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('#sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('#sidebar')
+            sidebar.style.display = 'none'
+        }
+        let slideIndex = 0;
+            const slideContainer = document.getElementById('carousel-slide');
+            const slides = slideContainer.getElementsByTagName('a');
+            const totalSlides = slides.length;
+            let slideInterval;
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % totalSlides;
+            slideContainer.style.transform = `translateX(-${slideIndex * 100}vw)`;
+            resetAutoSlide();
+        }
+
+        function prevSlide() {
+            slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+            slideContainer.style.transform = `translateX(-${slideIndex * 100}vw)`;
+            resetAutoSlide();
+            }
+    </script>
+</body>
+</html>
