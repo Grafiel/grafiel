@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="images/IconChatime.png">
+</head>
+<body class="bg-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <header class="relative z-50">
+        <nav class="container flex lg:flex-row justify-around py-2.5 text-center items-center bg-purple-800 w-full min-w-full fixed top-0 left-0 right-0">
+            <a class="block lg:hidden" onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            <a class="size-1/2 lg:size-auto" href="#"><img src="images/logo-chatime.png" alt="LogoChatime"></a>
+            <ul class="flex flex-col lg:flex-row items-center space-x-4 text-white font-bold">
+                <li class="hover:text-pink-500 lg:block hidden"><a href="index.html">INDEX</a></li>
+                <li class="hover:text-pink-500 lg:block hidden"><a href="biodata.html">BIODATA</a></li>
+                <li class="hover:text-pink-500 lg:block hidden"><a href="posts.html">POSTS</a></li>
+                <li class="hover:text-pink-500 lg:block hidden"><a href="freepage.html">GALLERY</a></li>
+                <li class="hover:text-pink-500 lg:block hidden"><a href=#>STORE LOCATION</a></li>
+                <li class="hover:text-pink-500 lg:block hidden"><a href=#>ATEALIER</a></li>
+                <li class="pb-1.5 pt-1 px-2 bg-pink-500 rounded-2xl lg:block hidden"><a href=#>MOBILE APP</a></li>
+            </ul>
+        </nav>
+        <ul id="sidebar" class="hidden flex flex-col justify-start place-self-start space-y-0 font-bold fixed top-0 left-0 h-screen w-60 z-auto bg-white shadow-xl">
+            <li class="pb-16 flex justify-end" onclick=hideSidebar()><a href="#"><svg class="text-white bg-pink-500 py-2  px-2" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="36px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li class="border-y py-2 text-gray-500 hover:text-red-600 text-center w-full"><a class="w-full" href="index.html">INDEX</a></li>
+            <li class="border-y py-2 text-gray-500 hover:text-red-600 text-center w-full"><a class="w-full" href="biodata.html">BIODATA</a></li>
+            <li class="border-y py-2 text-gray-500 hover:text-red-600 text-center w-full"><a class="w-full" href="posts.html">POSTS</a></li>
+            <li class="border-y py-2 text-gray-500 hover:text-red-600 text-center w-full"><a class="w-full" href="freepage.html">GALLERY</a></li>
+            <li class="border-y py-2 text-gray-500 hover:text-red-600 text-center w-full"><a class="w-full" href=#>STORE LOCATION</a></li>
+            <li class="border-y py-2 text-gray-500 hover:text-red-600 text-center w-full"><a class="w-full" href=#>ATEALIER</a></li>
+            <li class="py-2 bg-pink-500 w-full text-white text-center "><a href=#>MOBILE APP</a></li>
+        </ul>
+    </header>
+    <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
+        <h1 class="text-3xl font-bold text-purple-800 mb-8 text-center">Student Registration Form</h1>
+        <form id="registrationForm" class="space-y-6">
+            <!-- Full Name -->
+            <div>
+                <label for="fullName" class="block text-sm font-medium text-gray-700">Full Name</label>
+                <input type="text" id="fullName" name="fullName" 
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+            </div>
+
+            <!-- Student ID -->
+            <div>
+                <label for="studentId" class="block text-sm font-medium text-gray-700">Student ID (NIM)</label>
+                <input type="text" id="studentId" name="studentId" 
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                <input type="email" id="email" name="email" 
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+            </div>
+
+            <!-- Faculty/Major -->
+            <div>
+                <label for="faculty" class="block text-sm font-medium text-gray-700">Faculty/Major</label>
+                <select id="faculty" name="faculty" 
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                    <option value="">Select Faculty/Major</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="business">Business</option>
+                    <option value="arts">Arts</option>
+                    <option value="medicine">Medicine</option>
+                </select>
+            </div>
+
+            <!-- Date of Birth -->
+            <div>
+                <label for="dob" class="block text-sm font-medium text-gray-700">Date of Birth</label>
+                <input type="date" id="dob" name="dob" 
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+            </div>
+
+            <!-- Gender -->
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Gender</label>
+                <div class="mt-2 space-x-6">
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="gender" value="male" class="form-radio text-blue-600">
+                        <span class="ml-2">Male</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="gender" value="female" class="form-radio text-blue-600">
+                        <span class="ml-2">Female</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div>
+                <label for="address" class="block text-sm font-medium text-gray-700">Address</label>
+                <textarea id="address" name="address" rows="3" 
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"></textarea>
+            </div>
+
+            <!-- Phone Number -->
+            <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                <input type="tel" id="phone" name="phone" 
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+            </div>
+
+            <!-- Submit Button -->
+            <div class="pt-4">
+                <button type="submit" 
+                    class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                    Register
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('#sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('#sidebar')
+            sidebar.style.display = 'none'
+        }
+        let slideIndex = 0;
+            const slideContainer = document.getElementById('carousel-slide');
+            const slides = slideContainer.getElementsByTagName('a');
+            const totalSlides = slides.length;
+            let slideInterval;
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % totalSlides;
+            slideContainer.style.transform = `translateX(-${slideIndex * 100}vw)`;
+            resetAutoSlide();
+        }
+
+        function prevSlide() {
+            slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+            slideContainer.style.transform = `translateX(-${slideIndex * 100}vw)`;
+            resetAutoSlide();
+            }
+
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const fullName = document.getElementById('fullName').value.trim();
+            const studentId = document.getElementById('studentId').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const faculty = document.getElementById('faculty').value;
+            const dob = document.getElementById('dob').value;
+            const gender = document.querySelector('input[name="gender"]:checked');
+            const address = document.getElementById('address').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+
+            let isValid = true;
+            let errorMessage = '';
+
+            if (!fullName) {
+                errorMessage += 'Full Name is required\n';
+                isValid = false;
+            }
+
+            if (!studentId) {
+                errorMessage += 'Student ID is required\n';
+                isValid = false;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email || !emailRegex.test(email)) {
+                errorMessage += 'Please enter a valid email address\n';
+                isValid = false;
+            }
+
+            if (!faculty) {
+                errorMessage += 'Please select a Faculty/Major\n';
+                isValid = false;
+            }
+
+            if (!dob) {
+                errorMessage += 'Date of Birth is required\n';
+                isValid = false;
+            }
+
+            if (!gender) {
+                errorMessage += 'Please select a Gender\n';
+                isValid = false;
+            }
+
+            if (!address) {
+                errorMessage += 'Address is required\n';
+                isValid = false;
+            }
+
+            const phoneRegex = /^\d{10,}$/;
+            if (!phone || !phoneRegex.test(phone)) {
+                errorMessage += 'Please enter a valid phone number (minimum 10 digits)\n';
+                isValid = false;
+            }
+
+            if (!isValid) {
+                alert(errorMessage);
+                return;
+            }
+
+            alert('Registration successful!');
+            this.reset();
+        });
+
+        const inputs = document.querySelectorAll('input, select, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('focus', function() {
+                this.classList.add('ring-2', 'ring-blue-500');
+            });
+            input.addEventListener('blur', function() {
+                this.classList.remove('ring-2', 'ring-blue-500');
+            });
+        });
+
+        document.getElementById('phone').addEventListener('input', function(e) {
+            this.value = this.value.replace(/[^\d]/g, '');
+        });
+    </script>
+</body>
+</html>
